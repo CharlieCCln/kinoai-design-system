@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>OpenKinoAI - Design System</title>
+		<link rel="stylesheet" href="css/normalize.css" type="text/css" media="all">
+		<link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
+	</head>
+	<body>
+		<main>
+			<div class="content" id="text">
+				<span class="text-title content-title">Typographie - Mohave Regular</span>
+				<span class="text-title">Titre - 18pt</span>
+				<span id="text-option">Options - 14pt</span>
+				<span id="text-tracklet">Tracklets - 10pt</span>
+			</div>
+			<div class="content" id="colors">
+				<span class="content-title">Couleurs (survolez pour voir les valeurs)</span>
+				<div class="row" id="colors-row">
+					<div class="colorblock" id="colors-black">#202020</div>
+					<div class="colorblock" id="colors-blue">#418CFF</div>
+					<div class="colorblock" id="colors-grey">#AAAAAA</div>
+					<div class="colorblock" id="colors-white">#F6F6F6</div>
+					<div class="colorblock" id="colors-green">#00DB58</div>
+				</div>
+			</div>
+			<div class="content" id="imagery">
+				<span class="content-title">Iconographie (certaines icônes sont interactives !)</span>
+				<div class="row" id="imagery-row">
+					<div class="menu"></div>
+					<div class="trash"></div>
+					<div id="imagery-arrow"></div>
+					<div class="account"></div>
+					<div class="info"></div>
+					<div class="videobar"></div>
+				</div>
+			</div>
+			<div class="content" id="interactive">
+				<span class="content-title">Éléments interactifs</span>
+				<div class="row" id="interactive-row">
+					<div id="accordion">
+						<h3 class="tab" id="preparation">Partie</h3>
+						<div class=""></div>
+						<h3 class="tab" id="framing">Partie</h3>
+						<div class=""></div>
+						<h3 class="tab" id="videoediting">Partie</h3>
+						<div class=""></div>
+						<h3 class="tab" id="annotation">Partie</h3>
+						<div class=""></div>
+						<h3 class="tab" id="export">Partie</h3>
+						<div class=""></div>
+					</div>
+					<div id="interactive-row-row">
+						<div id="tabs">
+							<ul>
+								<li><a href="#preset">Catégorie</a></li>
+								<li><a href="#custom">Catégorie</a></li>
+							</ul>
+							<div id="preset"></div>
+							<div id="custom"></div>
+						</div>
+						<div class="half-row">
+							<select class="selectmenu" id="frame">
+								<option value="video" id="original-frame" selected>Option</option>
+								<option value="bcu" id="bcu">Option</option>
+								<option value="cu" id="cu">Option</option>
+								<option value="mcu" id="mcu">Option</option>
+								<option value="ms" id="ms">Option</option>
+								<option value="mls" id="mls">Option</option>
+								<option value="fs" id="fs">Option</option>
+							</select>
+							<select class="selectmenu" id="ratio">
+								<option value="original-ratio" id="original-ratio" selected>Option</option>
+								<option value="half" id="half">Option</option>
+								<option value="twice" id="twice">Option</option>
+								<option value="43" id="43">Option</option>
+								<option value="169" id="169">Option</option>
+								<option value="4k2k" id="4k2k">Option</option>
+							</select>
+						</div>
+						<div class="toggle-row">
+							<div class="toggle" id="keep-out"></div>
+							<span>Bouton toggle</span>
+						</div>
+						<div id="create-scene">Bouton</div>
+						<div class="half-row">
+							<div id="create">Bouton</div>
+							<div id="cancel">Bouton</div>
+						</div>
+					</div>
+					<div class="tracklet">
+						<span>Tracklet</span>
+						<div class="border"></div>
+					</div>
+					<div class="scene"></div>
+				</div>
+			</div>
+		</main>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="js/scripts.js" charset="utf-8"></script>
+	</body>
+
+</html>

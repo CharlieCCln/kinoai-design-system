@@ -1,0 +1,519 @@
+@font-face {
+  font-family: "MohaveRegular";
+  src: url("../assets/Mohave-Regular.otf");
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "MohaveRegular";
+  background-color: #F6F6F6;
+}
+
+.content{
+  width: 100vw;
+  margin-left: 32px;
+  margin-top: 32px;
+}
+
+.content-title{
+  font-size: 18pt;
+  color: #202020;
+  padding-bottom: 4px;
+  border-bottom: solid 3px #418CFF;
+  width: auto;
+}
+
+.row{
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.row > * {
+  margin-right: 32px;
+}
+
+/* -- TYPO -- */
+
+#text{
+  color: #202020;
+  padding-bottom: 0;
+}
+#text span{
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+}
+#text span:first-of-type{
+  display: inline-block;
+  width: auto;
+}
+
+.text-title{
+  font-size: 18pt;
+}
+
+#text-option{
+  font-size: 14pt;
+}
+
+#text-tracklet{
+  font-size: 10pt;
+}
+
+/* -- COULEURS -- */
+
+.colorblock{
+  width: 64px;
+  height: 64px;
+  border: solid 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12pt;
+}
+
+#colors-black{
+  background-color: #202020;
+  border-color: #202020;
+  color: #202020;
+}
+
+#colors-black:hover{
+  background-color: transparent;
+}
+
+#colors-blue{
+  background-color: #418CFF;
+  border-color: #418CFF;
+  color: #418CFF;
+}
+
+#colors-blue:hover{
+  background-color: transparent;
+}
+
+#colors-grey{
+  background-color: #AAAAAA;
+  border-color: #AAAAAA;
+  color: #AAAAAA;;
+}
+
+#colors-grey:hover{
+  background-color: transparent;
+}
+
+#colors-white{
+  background-color: #F6F6F6;
+  border-color: #202020;
+  color: #F6F6F6;
+}
+
+#colors-white:hover{
+  color: #202020;
+}
+
+#colors-green{
+  background-color: #00DB58;
+  border-color: #00DB58;
+  color: #00DB58;
+}
+
+#colors-green:hover{
+  background-color: transparent;
+}
+
+/* -- ICÔNES -- */
+
+.menu {
+  width: 64px;
+  height: 64px;
+  border: solid 3px #202020;
+  background-image: url("../assets/burger.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}
+.menu:hover {
+  background-color: #418CFF;
+  background-image: url("../assets/burger-w.svg");
+}
+
+.trash {
+  height: 32px;
+  width: 27.5px;
+  background-image: url("../assets/trash.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.trash:hover {
+  cursor: pointer;
+  background-image: url("../assets/trash-bk.svg");
+}
+
+#imagery-arrow{
+  height: 12px;
+  width: 24px;
+  background-image: url("../assets/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.account {
+  background-image: url("../assets/account.svg");
+  background-size: 32px 32px;
+  background-position: center;
+  height: 32px;
+  width: 32px;
+}
+
+.info {
+  background-image: url("../assets/info.svg");
+  background-size: 32px 32px;
+  background-position: center;
+  height: 32px;
+  width: 32px;
+}
+
+.videobar {
+  background-image: url("../assets/videobar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 45px;
+  width: 800px;
+  height: 36px;
+  background-color: #AAA;
+  border-radius: 20px;
+  padding: 16px;
+  margin-right: 0;
+}
+
+/* -- ÉLÉMENTS INTERACTIFS -- */
+
+#interactive-row{
+  align-items: flex-start;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 32px);
+  margin: 0 16px 0 16px;
+  height: 64px;
+  border-bottom: solid 3px #AAA;
+  background-image: url("../assets/arrow-g.svg");
+  background-repeat: no-repeat;
+  background-size: 28.5px 12px;
+  background-position: right;
+  font-family: "MohaveRegular";
+  font-weight: normal;
+  font-size: 18pt;
+  color: #AAA;
+}
+.tab .ui-state-active {
+  background-image: url("../assets/arrow.svg");
+}
+
+#accordion{
+  width: 350px;
+  margin-left: -8px;
+  padding: 8px;
+  border: solid 3px #AAA;
+}
+
+#accordion .ui-state-active {
+  color: #202020 !important;
+  border-color: #418CFF !important;
+}
+#accordion:hover {
+  cursor: pointer;
+}
+
+#tabs{
+  width: 286px;
+}
+
+#tabs ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "MohaveRegular";
+  font-size: 14pt;
+  height: 40px;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 8px;
+  padding: 8px;
+  border: solid 3px #AAA;
+  margin-top: 0px;
+}
+#tabs li {
+  border-bottom: solid 3px #AAA;
+  width: calc(50% - 8px);
+}
+#tabs a {
+  display: inline-block;
+  color: #AAA;
+  text-decoration: none;
+  width: 100%;
+  height: 40px;
+}
+#tabs .ui-state-active {
+  border-color: #418CFF !important;
+}
+#tabs .ui-state-active a {
+  color: #202020 !important;
+}
+
+#interactive-row-row{
+  display: block;
+  width: 310px;
+  height: 340px;
+}
+#interactive-row-row > *{
+  margin-bottom: 16px;
+}
+
+#frame-button:hover, #ratio-button:hover{
+  background-color: #0e6dff;
+}
+
+.ui-selectmenu-button {
+  display: flex;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  background-color: #418CFF;
+  color: #F6F6F6;
+  border-radius: 20px;
+  height: 40px;
+  padding-left: 16px;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../assets/select-arrow.svg");
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  background-size: 19px 8px;
+}
+.ui-selectmenu-button.ui-button {
+  text-align: left;
+  white-space: nowrap;
+  width: calc(50% - 16px);
+}
+.ui-selectmenu-button:hover {
+  cursor: pointer;
+}
+
+.ui-selectmenu-menu {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.ui-selectmenu-menu .ui-menu {
+  overflow: auto;
+  overflow-x: hidden;
+  padding-bottom: 1px;
+}
+
+.ui-selectmenu-open {
+  display: block;
+}
+
+.ui-selectmenu-text {
+  display: block;
+  margin-right: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ui-selectmenu-icon.ui-icon {
+  float: right;
+  margin-top: 0;
+}
+
+.ui-menu {
+  list-style: none;
+  padding: 0;
+  margin-top: -40px !important;
+  display: block;
+  outline: 0;
+  width: 149.5px !important;
+}
+.ui-menu .ui-menu-item-wrapper {
+  position: relative;
+  font-family: "MohaveRegular";
+  font-size: 14pt;
+  color: #F6F6F6;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 32px);
+}
+.ui-menu .ui-menu {
+  position: absolute;
+}
+.ui-menu .ui-menu-item {
+  margin: 0;
+  cursor: pointer;
+  border-bottom: solid 3px #F6F6F6;
+  background-color: #418CFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ui-menu .ui-menu-item:first-of-type {
+  border-radius: 20px 20px 0px 0px;
+  background-image: url("../assets/select-arrow.svg");
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  background-size: 19px 8px;
+}
+.ui-menu .ui-menu-item:last-of-type {
+  border-radius: 0px 0px 20px 20px;
+  border-bottom: 0;
+}
+.ui-menu .ui-menu-item:hover {
+  color: #F6F6F6 !important;
+  background-color: #0e6dff;
+}
+
+.half-row {
+  display: flex;
+  justify-content: space-between;
+}
+.half-row select, .half-row div {
+  color: #F6F6F6;
+  width: calc(50% - 8px);
+}
+.half-row .ui-button {
+  width: calc(47% - 16px) !important;
+  background-position: 90% 50%;
+}
+
+.toggle-row {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.toggle-row span {
+  margin-left: 12px;
+  margin-top: 1.5px;
+}
+
+.toggle {
+  height: 16px;
+  width: 32px;
+  background-image: url("../assets/toggle-off.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 32px 16px;
+  margin-top: 4px;
+}
+
+.on {
+  background-image: url("../assets/toggle-on.svg");
+}
+
+#create-scene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #418CFF;
+  color: #F6F6F6;
+  height: 40px;
+  border-radius: 20px;
+  width: 100%;
+}
+#create-scene:hover {
+  background-color: #0e6dff;
+  cursor: pointer;
+}
+
+#create, #cancel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 20px;
+}
+
+#create {
+  background-color: #418CFF;
+}
+#create:hover{
+  background-color: #0e6dff;
+  cursor:pointer;
+}
+
+#cancel {
+  background-color: #AAA;
+}
+#cancel:hover{
+  background-color: #919191;
+  cursor:pointer;
+}
+
+.tracklet {
+  width: 190px;
+}
+.tracklet span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #AAA;
+  color: #F6F6F6;
+  height: 20px;
+  width: 195px;
+  border-radius: 10px;
+  font-family: "MohaveRegular";
+  font-size: 10pt;
+  margin-bottom: 4px;
+}
+
+.border {
+  width: 100%;
+  height: 20vh;
+  border: solid 3px #AAA;
+}
+
+.greenborder {
+  border-color: #00DB58;
+}
+
+.greenname {
+  background-color: #00DB58 !important;
+}
+
+.selected {
+  border-color: #418CFF !important;
+  color: #418CFF !important;
+}
+
+.scene {
+  display: block;
+  width: 200px;
+  height: 112.5px;
+  border: solid 3px #202020;
+  border-radius: 20px;
+  padding: 8px;
+  background-image: url("../assets/video.jpg");
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+  font-family: "MohaveRegular";
+  font-size: 14pt;
+  color: #F6F6F6;
+}
+.scene:hover{
+  box-shadow: inset 2000px 0 0 0 #418CFF;
+  border-color: #418cff;
+}
